@@ -1,0 +1,38 @@
+# Ancestor — gilded bronze and verdigris on a lamp-black void.
+# Sampled from a render of a fractured classical bust: gold leaf crown,
+# oxidised copper skull, warm shadow.
+
+mode = "dark"
+
+accent = "#c89a63"
+selection = "#3e2d1c"
+muted = "#6d5c48"
+
+background = "#0e0c0a"
+dark_background = "#090807"
+darker_background = "#050504"
+lighter_background = "#1e1913"
+
+foreground = "#d6d3c4"
+dark_foreground = "#7f8d84"
+light_foreground = "#e3dccb"
+bright_foreground = "#f6d4a5"
+
+hyprland_active_border = "rgba(8e6038ee) rgba(f6d4a5ee) 45deg"
+hyprland_inactive_border = "rgba(3a2f24aa)"
+
+red = "#be5a3c"
+yellow = "#d5a26c"
+orange = "#b4793f"
+green = "#5f8b74"
+cyan = "#6fa39c"
+blue = "#6e8e9c"
+magenta = "#ae7f84"
+brown = "#4e341e"
+
+bright_red = "#de7c58"
+bright_yellow = "#f3d09d"
+bright_green = "#82ae95"
+bright_cyan = "#9ac6be"
+bright_blue = "#98b6c0"
+bright_magenta = "#cba0a2"
