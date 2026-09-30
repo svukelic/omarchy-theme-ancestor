@@ -33,7 +33,7 @@ omarchy theme set ancestor
 
 ## Backgrounds
 
-- `1-ancestor.jpg` — the source render
+- `1-ancestor.webp` — the source render, lossless at 2560x1440
 - `2-gilded-void.jpg` — bronze glow in the dark
 - `3-verdigris.jpg` — patina glow in the dark
 
