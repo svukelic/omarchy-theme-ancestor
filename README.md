@@ -44,3 +44,20 @@ Cycle them with `omarchy theme bg next`.
 Terminal, Neovim, VS Code, btop, Chromium and the rest are generated from
 `colors.toml` by Omarchy's own templates, so the theme ships colours rather
 than per-app config.
+
+## Shell surfaces
+
+Omarchy generates `shell.toml` from `colors.toml`, so lock, menu, launcher,
+polkit, tooltips, popups and the image picker are themed without the theme
+shipping anything.
+
+The one exception is [shell.hyprland.toml](shell.hyprland.toml), a section
+override. Because this theme sets `hyprland_active_border` for the bronze-to-gilt
+window border, the generated `active-border-foreground` would resolve to that
+same gradient — and the flat slots that reference it (tooltip and menu borders,
+selected rows) want a single colour. The override keeps the gradient on window
+borders and hands those slots gilt.
+
+To adjust any other surface, drop a `shell.<section>.toml` beside it — Omarchy
+splices that section into the generated file and leaves the rest derived, so the
+theme keeps picking up new tokens as Omarchy adds them.

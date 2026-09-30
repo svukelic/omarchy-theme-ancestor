@@ -1,0 +1,19 @@
+# Overrides the [hyprland] section of the generated shell.toml, leaving every
+# other section to be derived from colors.toml as usual.
+#
+# The template resolves both tokens from the theme's `hyprland_active_border`
+# when it is set, falling back to `accent` and `foreground` when it is not:
+#
+#   active-border            = "{{ shell_gradient hyprland_active_border accent }}"
+#   active-border-foreground = "{{ shell_gradient hyprland_active_border foreground }}"
+#
+# Ancestor sets `hyprland_active_border` to get the bronze-to-gilt window
+# border, so without this file the -foreground token resolves to that same
+# two-stop gradient. Tooltips, menu and launcher borders, and selected-row
+# borders all reference -foreground, and those slots want a single colour.
+#
+# So: keep the gradient where a gradient belongs, and give the flat slots gilt.
+
+[hyprland]
+active-border            = "rgba(8e6038ee) rgba(f6d4a5ee) 45deg"
+active-border-foreground = "#c89a63"
