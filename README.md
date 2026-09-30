@@ -61,17 +61,3 @@ borders and hands those slots gilt.
 To adjust any other surface, drop a `shell.<section>.toml` beside it — Omarchy
 splices that section into the generated file and leaves the rest derived, so the
 theme keeps picking up new tokens as Omarchy adds them.
-
-## Animated background (optional)
-
-The theme's source is a rendered animation, and its 41-second cycle can be run
-as a live wallpaper. Omarchy draws the background with a QML `Image`; Qt's
-`AnimatedImage` derives from it and plays animated WebP, so this needs a
-four-line patch to the stock background plugin and nothing else — no video
-player, no extra process, no packages.
-
-See [plugin/README.md](plugin/README.md) for the patch, the install steps, the
-measured costs, and the ffmpeg recipe for regenerating the loop.
-
-The wallpaper is a still on an unpatched Omarchy and animates on a patched one,
-so the patch is an enhancement rather than a requirement.
